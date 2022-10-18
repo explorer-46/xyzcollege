@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private my:Router) { }
 
   username=""
   password=""
@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit {
   value=()=>{
 
     if (this.username=="Admin" && this.password=="1234") {
-      alert("successfull")
+      this.my.navigate(["/dash"])
       
     } else {
       alert("invalid password")
