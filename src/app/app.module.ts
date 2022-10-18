@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddstudentComponent } from './addstudent/addstudent.component';
+import { ViewstudentComponent } from './viewstudent/viewstudent.component';
 
 
 
@@ -19,7 +20,8 @@ import { AddstudentComponent } from './addstudent/addstudent.component';
 const link:Routes=[
   {path:"",component:LoginComponent},
   {path:"dash",component:DashboardComponent},
-  {path:"addstudent",component:AddstudentComponent}
+  {path:"addstudent",component:AddstudentComponent},
+  {path:"views",component:ViewstudentComponent}
   
   
 ]
@@ -31,7 +33,8 @@ const link:Routes=[
     LoginComponent,
     DashboardComponent,
     NavbarComponent,
-    AddstudentComponent
+    AddstudentComponent,
+    ViewstudentComponent
   ],
   imports: [
     BrowserModule,
