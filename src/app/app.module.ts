@@ -13,6 +13,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AddstudentComponent } from './addstudent/addstudent.component';
 import { ViewstudentComponent } from './viewstudent/viewstudent.component';
 import { AddfacultyComponent } from './addfaculty/addfaculty.component';
+import { ViewfacultyComponent } from './viewfaculty/viewfaculty.component';
 
 
 
@@ -23,7 +24,8 @@ const link:Routes=[
   {path:"dash",component:DashboardComponent},
   {path:"addstudent",component:AddstudentComponent},
   {path:"views",component:ViewstudentComponent},
-  {path:"addf",component:AddfacultyComponent}
+  {path:"addf",component:AddfacultyComponent},
+  {path:"viewf",component:ViewfacultyComponent}
   
   
 ]
@@ -37,7 +39,8 @@ const link:Routes=[
     NavbarComponent,
     AddstudentComponent,
     ViewstudentComponent,
-    AddfacultyComponent
+    AddfacultyComponent,
+    ViewfacultyComponent
   ],
   imports: [
     BrowserModule,
